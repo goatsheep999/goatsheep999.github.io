@@ -1,0 +1,18 @@
+<hr>
+<p>abbrlink: 2580072625<br>title: 设计模式之工厂模式<br>categories:<br>    - 设计模式<br>tags:<br>    - 设计模式<br>cover: <a href="https://github.com/goatsheep999/goatsheep999.github.io/raw/master/img/shejimoshi.png" target="_blank" rel="noopener">https://github.com/goatsheep999/goatsheep999.github.io/raw/master/img/shejimoshi.png</a><br>top_img: <a href="https://github.com/goatsheep999/goatsheep999.github.io/raw/master/img/shejimoshi.png" target="_blank" rel="noopener">https://github.com/goatsheep999/goatsheep999.github.io/raw/master/img/shejimoshi.png</a></p>
+<hr>
+<p>前言：</p>
+<p>&emsp;&emsp;折腾了两个晚上，终于把博客搭建的差不多了，这样就可以写文章了。虽然有些功能还没有实现，但是重在写文章，就不计较那么多了，抽空再锦上添花吧。</p>
+<h1 id="简单工厂模式"><a href="#简单工厂模式" class="headerlink" title="简单工厂模式"></a>简单工厂模式</h1><h2 id="从一个需求开始"><a href="#从一个需求开始" class="headerlink" title="从一个需求开始"></a>从一个需求开始</h2><p>&emsp;&emsp;一个披萨项目：要求便于披萨种类扩展，便于维护。–开闭原则</p>
+<ol>
+<li><p>披萨的种类：GreekPizz, CheesePizz等；</p>
+</li>
+<li><p>披萨制作方法：prepare, bake, cut, box等；</p>
+</li>
+<li><p>完成披萨店订购功能；</p>
+</li>
+</ol>
+<h2 id="使用传统方式完成"><a href="#使用传统方式完成" class="headerlink" title="使用传统方式完成"></a>使用传统方式完成</h2><ol>
+<li>建一个抽象类Pizza，不同种类的pizza继承这个抽象类。</li>
+</ol>
+<p><img src="factory-1.png" alt=""></p>
