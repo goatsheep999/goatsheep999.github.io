@@ -1251,3 +1251,10 @@ pre .javascript .function {
     color: #fff;
   }
 }
+.emoji-hj {
+	display: inline;
+	position: static;
+	top: 0px;
+	margin: 0 3px !important;
+	padding: 0;
+}
